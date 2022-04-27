@@ -13,12 +13,12 @@ void main(void)
 	scanf("%i", &num);
 	}while(num<=0);
 	
-	for(i=1;i<=num/2;i++)
+	for(i=1;i<=num/2;i++)//hasta el num divido entre 2, comprobar de uno en uno si el valor es divisible.
 	{
-		if(num % i ==0)
+		if(num % i ==0) //num modulo es igual a 0
 		{
-			printf("%i, ", i);
+			printf("%i, ", i); //el for se detiene hasta no tener divisores, e imprime los que son divisores.
 		}
 	}
-	printf("%i", num);
+	printf("%i", num);//se imprime el número porque es divisor entre sí mismo.
 }
